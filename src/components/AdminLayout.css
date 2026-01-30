@@ -390,6 +390,10 @@
   letter-spacing: 0.04em;
 }
 
+.admin-table .th-short {
+  display: none;
+}
+
 .admin-table tbody tr:hover {
   background: #f8fafc;
 }
@@ -558,4 +562,131 @@
   padding: 1rem 0;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--admin-border);
+}
+
+/* ========== Admin mobile responsive ========== */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .admin-header-nav {
+    width: 100%;
+    order: 3;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--admin-border);
+    flex-wrap: wrap;
+  }
+
+  .admin-header-nav-link {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .admin-user-email {
+    max-width: 120px;
+    font-size: 0.75rem;
+  }
+
+  .admin-main {
+    padding: 1rem;
+  }
+
+  .admin-content {
+    max-width: 100%;
+  }
+
+  .admin-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .admin-table {
+    font-size: 0.8125rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .admin-table th {
+    font-size: 0.6875rem;
+  }
+
+  .admin-table .th-full {
+    display: none;
+  }
+
+  .admin-table .th-short {
+    display: inline;
+  }
+
+  .admin-table tbody tr.admin-table-compact-row th,
+  .admin-table tbody tr.admin-table-compact-row td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .admin-card:has(.admin-table) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .admin-card {
+    padding: 1rem;
+  }
+
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .admin-login-wrap {
+    padding: 1rem;
+  }
+
+  .admin-login {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .admin-login h1 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .admin-brand-text {
+    font-size: 0.9rem;
+  }
+
+  .admin-main {
+    padding: 0.75rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 0.4rem 0.35rem;
+    font-size: 0.75rem;
+  }
+
+  .admin-table th {
+    font-size: 0.625rem;
+  }
+
+  .admin-login-wrap {
+    padding: 0.75rem;
+  }
+
+  .admin-login {
+    padding: 1.25rem 1rem;
+  }
 }

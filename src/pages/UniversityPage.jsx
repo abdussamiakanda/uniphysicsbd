@@ -99,27 +99,27 @@ export default function UniversityPage() {
 
       <section className="university-overview">
         <h2 className="section-title">UPC achievements overview</h2>
-        <div className="site-table-wrap">
-          <table className="site-table">
-            <thead>
-              <tr>
-                <th>Gold</th>
-                <th>Silver</th>
-                <th>Bronze</th>
-                <th>Acc.</th>
-                <th>Total teams</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{totals.gold}</td>
-                <td>{totals.silver}</td>
-                <td>{totals.bronze}</td>
-                <td>{totals.acc}</td>
-                <td><strong>{totals.total}</strong></td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="university-stats-cards" role="list">
+          <div className="university-stat-card university-stat-card--gold" role="listitem">
+            <span className="university-stat-card-label">Gold</span>
+            <span className="university-stat-card-value">{totals.gold}</span>
+          </div>
+          <div className="university-stat-card university-stat-card--silver" role="listitem">
+            <span className="university-stat-card-label">Silver</span>
+            <span className="university-stat-card-value">{totals.silver}</span>
+          </div>
+          <div className="university-stat-card university-stat-card--bronze" role="listitem">
+            <span className="university-stat-card-label">Bronze</span>
+            <span className="university-stat-card-value">{totals.bronze}</span>
+          </div>
+          <div className="university-stat-card university-stat-card--acc" role="listitem">
+            <span className="university-stat-card-label">Acc.</span>
+            <span className="university-stat-card-value">{totals.acc}</span>
+          </div>
+          <div className="university-stat-card university-stat-card--total" role="listitem">
+            <span className="university-stat-card-label">Total teams</span>
+            <span className="university-stat-card-value">{totals.total}</span>
+          </div>
         </div>
       </section>
 
@@ -137,11 +137,11 @@ export default function UniversityPage() {
                 <table className="site-table">
                   <thead>
                     <tr>
-                      <th>Team #</th>
-                      <th>Problem</th>
-                      <th>Medal</th>
-                      <th>Members</th>
-                      <th>Sponsor</th>
+                      <th><span className="th-full">Team</span><span className="th-short" aria-hidden>#</span></th>
+                      <th><span className="th-full">Problem</span><span className="th-short" aria-hidden>Prob.</span></th>
+                      <th><span className="th-full">Medal</span><span className="th-short" aria-hidden>Med.</span></th>
+                      <th><span className="th-full">Members</span><span className="th-short" aria-hidden>Mem.</span></th>
+                      <th><span className="th-full">Sponsor</span><span className="th-short" aria-hidden>Spons.</span></th>
                     </tr>
                   </thead>
                   <tbody>

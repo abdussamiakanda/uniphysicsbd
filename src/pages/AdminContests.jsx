@@ -481,13 +481,13 @@ export default function AdminContests() {
             <table className="admin-table">
               <thead>
                 <tr>
-                  <th>University</th>
-                  <th>Problem</th>
-                  <th>Gold</th>
-                  <th>Silver</th>
-                  <th>Bronze</th>
-                  <th>Acc</th>
-                  <th>Total</th>
+                  <th><span className="th-full">University</span><span className="th-short" aria-hidden>University</span></th>
+                  <th><span className="th-full">Problem</span><span className="th-short" aria-hidden>P</span></th>
+                  <th><span className="th-full">Gold</span><span className="th-short" aria-hidden>G</span></th>
+                  <th><span className="th-full">Silver</span><span className="th-short" aria-hidden>S</span></th>
+                  <th><span className="th-full">Bronze</span><span className="th-short" aria-hidden>B</span></th>
+                  <th><span className="th-full">Acc</span><span className="th-short" aria-hidden>Acc</span></th>
+                  <th><span className="th-full">Total</span><span className="th-short" aria-hidden>Tot</span></th>
                 </tr>
               </thead>
               <tbody>
@@ -520,12 +520,12 @@ export default function AdminContests() {
             <table className="admin-table">
               <thead>
                 <tr>
-                  <th>University</th>
-                  <th>Gold</th>
-                  <th>Silver</th>
-                  <th>Bronze</th>
-                  <th>Acc</th>
-                  <th>Total</th>
+                  <th><span className="th-full">University</span><span className="th-short" aria-hidden>University</span></th>
+                  <th><span className="th-full">Gold</span><span className="th-short" aria-hidden>G</span></th>
+                  <th><span className="th-full">Silver</span><span className="th-short" aria-hidden>S</span></th>
+                  <th><span className="th-full">Bronze</span><span className="th-short" aria-hidden>B</span></th>
+                  <th><span className="th-full">Acc</span><span className="th-short" aria-hidden>Acc</span></th>
+                  <th><span className="th-full">Total</span><span className="th-short" aria-hidden>Tot</span></th>
                 </tr>
               </thead>
               <tbody>
