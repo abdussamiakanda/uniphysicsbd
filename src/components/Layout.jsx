@@ -124,6 +124,8 @@ export default function Layout() {
           Official competition: <a href="https://www.uphysicsc.com/" target="_blank" rel="noopener noreferrer">uphysicsc.com</a>
           {' · '}
           This site shows Bangladesh-only data.
+          {' · '}
+          Developer: <a href="https://github.com/abdussamiakanda" target="_blank" rel="noopener noreferrer">Md Abdus Sami Akanda</a>
         </p>
       </footer>
     </div>
