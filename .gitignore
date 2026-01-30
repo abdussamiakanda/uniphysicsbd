@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+
+# Environment (Supabase keys, etc.)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Optional
+coverage
+*.local
